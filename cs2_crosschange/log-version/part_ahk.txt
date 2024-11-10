@@ -1,0 +1,5 @@
+#Requires AutoHotkey v1.1  ; 
+
+!\::  ; 
+Run, F:\codingdraft\python\cs2_crosschange\dist\alias_make\alias_make.exe ;
+return  ; 

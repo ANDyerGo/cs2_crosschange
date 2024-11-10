@@ -1,0 +1,73 @@
+def replace_from_end(filename, search_string, replace_string):
+    # 读取文件内容
+    with open(filename, 'r', encoding='utf-8') as file:
+        content = file.read()
+    # 找到字符串的索引
+    index = content.rfind(search_string)
+    # 如果找到了字符串
+    if index != -1:
+        # 替换字符串
+        content = content[:index] + replace_string + content[index + len(search_string):]
+        # 写回文件
+        with open(filename, 'w', encoding='utf-8') as file:
+            file.write(content)
+        print(f"'{search_string}' has been replaced with '{replace_string}' at the end of the file.")
+    else:
+        print(f"'{search_string}' not found in the file.")
+
+f=open("F:/cros/crossbook.cfg", encoding="UTF-8")
+
+input_string=f.read()
+
+
+# 去除[Console]标签并分割成行
+lines = [line.replace('[Console]', '').strip() for line in input_string.strip().split('\n') if line.strip()]
+# 定义alias名称
+alias_name = ""
+
+# 移除空行
+lines = [line for line in lines if line]
+
+# 创建一个空字典来存储配置
+config_dict = {}
+# 遍历每一行
+
+from datetime import datetime
+# 获取当前时间
+now = datetime.now()
+# 获取分钟和秒钟
+minutes = now.minute
+seconds = now.second
+# 将分钟和秒钟数值相加
+sum_of_time = minutes + seconds
+# 将结果转换为字符串
+sum_of_time_str = str(sum_of_time)
+
+
+for line in lines:
+    # 检查是否是最后一行
+    if line.startswith('>'):
+        # 去除">"并存储
+        alias_name = line[1:].strip()+sum_of_time_str
+
+
+
+# 构建alias命令
+alias_command = f'alias {alias_name} "'
+
+for line in lines[0:-1]:
+    # 分割键和值
+    key, value = line.split(' = ')
+    # 存储到字典中，这里不需要转换类型，直接存储为字符串
+    config_dict[key.strip()] = value.strip()
+    alias_command += f'{key} {value}; '
+
+# 完成alias命令并添加额外的别名和命令
+final_command = f'{alias_command}; alias switch switch1"'
+
+replace_from_end("F:/cros/cfgbook/crosschange.cfg","switch1" ,alias_name)
+
+fr= open("F:/cros/cfgbook/crosschange.cfg","a",encoding="UTF-8")
+fr.write(final_command+'\n')
+fr.close()
+f.close()

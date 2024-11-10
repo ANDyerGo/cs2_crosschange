@@ -1,0 +1,38 @@
+alias ben "cl_crosshair_drawoutline;cl_crosshair_outlinethickness;cl_crosshair_t;cl_crosshairalpha;cl_crosshaircolor;cl_crosshaircolor_b;cl_crosshaircolor_g;cl_crosshaircolor_r;cl_crosshairdot;cl_crosshairgap;cl_crosshairsize;cl_crosshairstyle;cl_crosshairthickness;cl_crosshairusealpha;"
+
+
+
+//got
+alias ben "cl_crosshair_drawoutline;cl_crosshair_dynamic_maxdist_splitratio;cl_crosshair_dynamic_splitalpha_innermod;cl_crosshair_dynamic_splitalpha_outermod;cl_crosshair_dynamic_splitdist;cl_crosshair_friendly_warning;cl_crosshair_outlinethickness;cl_crosshair_sniper_show_normal_inaccuracy;cl_crosshair_sniper_width;cl_crosshair_t;cl_crosshairalpha;cl_crosshaircolor;cl_crosshaircolor_b;cl_crosshaircolor_g;cl_crosshaircolor_r;cl_crosshairdot;cl_crosshairgap;cl_crosshairgap_useweaponvalue;cl_crosshairsize;cl_crosshairstyle;cl_crosshairthickness;cl_crosshairusealpha;"
+
+alias ben "cl_crosshair_drawoutline;cl_crosshair_outlinethicknesscl_crosshair_t;cl_crosshairalpha;cl_crosshaircolor;cl_crosshaircolor_b;cl_crosshaircolor_g;cl_crosshaircolor_r;cl_crosshairdot;cl_crosshairgap;cl_crosshairsize;cl_crosshairstyle;cl_crosshairthickness;cl_crosshairusealpha;"
+
+alias ben1"cl_crosshair_dynamic_maxdist_splitratio;cl_crosshair_dynamic_splitalpha_innermod;cl_crosshair_dynamic_splitalpha_outermod;cl_crosshair_dynamic_splitdist;cl_crosshair_friendly_warning;"
+alias ben2"cl_crosshair_drawoutline;cl_crosshair_outlinethickness;cl_crosshair_sniper_show_normal_inaccuracy;cl_crosshair_sniper_width;cl_crosshair_t;cl_crosshairalpha;cl_crosshairusealpha;"
+alias"cl_crosshaircolor;cl_crosshaircolor_b;cl_crosshaircolor_g;cl_crosshaircolor_r;cl_crosshairdot;cl_crosshairgap;cl_crosshairgap_useweaponvalue;cl_crosshairsize;cl_crosshairstyle;cl_crosshairthickness;"
+
+alias ben1 "cl_crosshair_drawoutline; cl_crosshair_outlinethickness; cl_crosshaircolor; cl_crosshaircolor_r;"
+alias ben2 "cl_crosshaircolor_g; cl_crosshaircolor_b; cl_crosshairalpha; cl_crosshairdot;"
+alias ben3 "cl_crosshairgap; cl_crosshairsize; cl_crosshairstyle; cl_crosshairthickness;"
+
+
+
+
+
+alias ben "cl_crosshair_drawoutline;;cl_crosshair_dynamic_maxdist_splitratio;cl_crosshair_dynamic_splitalpha_innermod;cl_crosshair_dynamic_splitalpha_outermod;cl_crosshair_dynamic_splitdist;cl_crosshair_outlinethickness;cl_crosshair_t;cl_crosshairalpha;cl_crosshaircolor;cl_crosshaircolor_b;cl_crosshaircolor_g;cl_crosshaircolor_r;cl_crosshairdot;cl_crosshairgap;cl_crosshairsize;cl_crosshairstyle;cl_crosshairthickness"
+
+
+alias CSGO-wAD3c-ykt5L-zvZ98-vBisR-6sWPA "cl_crosshair_drawoutline = false; cl_crosshair_dynamic_maxdist_splitratio = 1.000000; cl_crosshair_dynamic_splitalpha_innermod = 0.000000; cl_crosshair_dynamic_splitalpha_outermod = 1.000000; cl_crosshair_dynamic_splitdist = 3; cl_crosshair_outlinethickness = 1.000000; cl_crosshair_t = false; cl_crosshairalpha = 255; cl_crosshaircolor = 4; cl_crosshaircolor_b = 0; cl_crosshaircolor_g = 255; cl_crosshaircolor_r = 0; cl_crosshairdot = false; cl_crosshairgap = -4.000000; cl_crosshairsize = 1.000000; cl_crosshairstyle = 4; cl_crosshairthickness = 1.000000; cl_crosshairusealpha = true; ; alias switch switch1"
+
+
+alias c118 " cl_crosshair_drawoutline  false; cl_crosshair_dynamic_maxdist_splitratio  1.000000; cl_crosshair_dynamic_splitalpha_innermod  0.000000; cl_crosshair_dynamic_splitalpha_outermod  1.000000; cl_crosshair_dynamic_splitdist  3; cl_crosshair_outlinethickness  1.000000;  cl_crosshaircolor_b  0; cl_crosshaircolor_g  255; cl_crosshaircolor_r  0; cl_crosshairdot  false; cl_crosshairgap  -4.000000; cl_crosshairsize  1.000000; cl_crosshairstyle  4; cl_crosshairthickness  1.000000 ; alias switch switch1"
+
+
+alias ben "cl_crosshair_drawoutline;cl_crosshair_dynamic_maxdist_splitratio;cl_crosshair_dynamic_splitalpha_innermod;cl_crosshair_dynamic_splitalpha_outermod;cl_crosshair_dynamic_splitdist;cl_crosshair_outlinethickness;cl_crosshaircolor_b;cl_crosshaircolor_g;cl_crosshaircolor_r;cl_crosshairdot;cl_crosshairgap;cl_crosshairsize;cl_crosshairstyle;cl_crosshairthickness;"
+
+
+
+
+
+
+

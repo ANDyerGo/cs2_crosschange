@@ -1,0 +1,86 @@
+copyq:
+var defaultPath = Dir().homePath();
+var customPath = 'F:/cros/'; // 修改为L盘根目录
+var suffices = {
+  'image/svg': 'svg',
+  'image/png': 'png',
+  'image/jpeg': 'jpg',
+  'image/jpg': 'jpg',
+  'image/bmp': 'bmp',
+  'text/html': 'html',
+  'text/plain': 'cfg',
+};
+
+if (customPath) {
+    currentpath(customPath);
+}
+else {
+    currentpath(defaultPath);
+}
+
+function hasSuffix(fileName) {
+  return /\.[0-9a-zA-Z]+$/.test(fileName);
+}
+
+function addSuffix(fileName, format) {
+  var suffix = suffices[format];
+  return suffix ? fileName + "." + suffix : fileName;
+}
+
+function filterFormats(format) {
+  return /^[a-z]/.test(format) && !/^application\/x/.test(format);
+}
+
+function itemFormats(row) {
+  return str(read('?', row))
+    .split('\n')
+    .filter(filterFormats);
+}
+
+function formatPriority(format) {
+  var k = Object.keys(suffices);
+  var i = k.indexOf(format);
+  return i === -1 ? k.length : i;
+}
+
+function reorderFormats(formats) {
+  formats.sort(function(lhs, rhs) {
+    var i = formatPriority(lhs);
+    var j = formatPriority(rhs);
+    return i === j ? lhs.localeCompare(rhs) : i - j;
+  });
+}
+
+if (selectedtab()) tab(selectedtab());
+var row = selectedtab() ? currentitem() : -1;
+var formats = itemFormats(row);
+reorderFormats(formats);
+
+// 获取文本首行字符串作为文件名
+var clipboardText = str(getitem(currentitem())[formats[0]]);
+//var firstLine = clipboardText.split('\n')[0].replace(/\s+/g, '');
+var firstLine="crossbook";
+var defaultFileName = firstLine;
+
+// 确保文件名有后缀
+var fileName = hasSuffix(defaultFileName) ? defaultFileName : addSuffix(defaultFileName, 'text/plain');
+
+var f = File(customPath + fileName);
+
+ // 尝试删除已存在的文件
+if (f.exists()) {
+    if (!f.remove()) {
+        popup('删除失败 "' + f.fileName() + '"', f.errorString());
+        abort();
+    }
+}
+
+// 尝试打开文件进行写入
+if (!f.open()) {
+  popup('打开失败 "' + f.fileName() + '"', f.errorString());
+  abort();
+}
+
+f.write(clipboardText);
+f.close();
+popup("保存成功", '条目已保存为 "' + f.fileName() + '".');

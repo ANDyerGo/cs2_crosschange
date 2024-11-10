@@ -1,0 +1,26 @@
+CSGO-H9mcs-8GDFZ-MfxkQ-2Kx7O-pTLoD 
+[Console] cl_crosshairstyle = 4
+[Console] cl_crosshairsize = 2.000000
+[Console] cl_crosshairthickness = 0.000000
+[Console] cl_crosshair_t = false
+[Console] cl_crosshairdot = false
+[Console] cl_crosshairgap = -3.000000
+[Console] cl_crosshair_drawoutline = false
+[Console] cl_crosshair_outlinethickness = 1.000000
+[Console] cl_crosshairusealpha = true
+[Console] cl_crosshaircolor = 4
+
+CSGO-H9mcs-8GDFZ-MfxkQ-2Kx7O-pTLyD 
+[Console] cl_crosshairstyle = 7
+[Console] cl_crosshairsize = 2.000000
+[Console] cl_crosshairthickness = 0.000000
+[Console] cl_crosshair_t = false
+[Console] cl_crosshairdot = false
+[Console] cl_crosshairgap = -3.000000
+[Console] cl_crosshair_drawoutline = false
+[Console] cl_crosshair_outlinethickness = 1.000000
+[Console] cl_crosshairusealpha = true
+[Console] cl_crosshaircolor = 4
+
+
+
